@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibek Chaudhary | frontend developer</title>
+    <meta name="description" content="I am a frontend developer with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, and React. I am always looking to learn new technologies and improve my skills.">
+    <meta http-equiv="Content-Security-Policy" 
+    content=
+    "default-src 'self'; 
+    img-src 'self'; 
+    script-src 'self' https://images.unsplash.com; 
+    style-src 'self' https://images.unsplash.com;">
+</head>
+<body>
+    <header>
+        <h1>Bibek Chaudhary</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="../img/profile.png" alt="Profile Picture" fetchpriority="high">
+            <p>
+                I am <dfn>Bibek Chaudhary</dfn>, a <abbr title="Goal is full stack developer">frontend developer</abbr> with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, and React. I am always looking to learn new technologies and improve my skills.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <figure>
+                    <img src="../img/project1.png" alt="The Quick Inline Alert Screenshot">
+                    <figcaption><a href="https://github.com/bibekkumarchaudhary387/Web-development-Practice/blob/main/day%206/challenges/TheQuickInlineAlert.html">Project 1: The Quick Inline Alert</a></figcaption>
+                </figure>
+                <figure>
+                    <img src="../img/project2.png" alt="Internal Css Screenshot">
+                    <figcaption><a href="https://github.com/bibekkumarchaudhary387/Web-development-Practice/blob/main/day%206/internalcss.html">Project 2: Internal CSS</a></figcaption>
+                </figure>
+            </article>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill Name</th>
+                        <th>Competency Level</th>
+                        <th>Years of Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediate</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediate</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                        <td>0.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <form action="/submit-inquiry" method="post" enctype="multipart/form-data">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here..." required></textarea><br>
+                <label for="attachment">Attachment:</label>
+                <input type="file" id="attachment" name="attachment"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Bibek Chaudhary. All rights reserved.</p>
+            <address>
+                <a href="mailto:bibekchaudhary2439@gmail.com">Email Me</a>
+            </address>
+    </main>
+</body>
+</html>
